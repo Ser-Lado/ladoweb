@@ -72,7 +72,6 @@ footer {
     width: 100%;
     height: 100%;
     border: none;
-    overflow-y: scroll; /* Enable vertical scrolling */
 }
 
 @media (max-width: 768px) {
@@ -82,7 +81,8 @@ footer {
     }
 
     .pdf-container {
-        padding-bottom: 125%; /* Adjust aspect ratio for mobile */
+        height: 500px; /* Adjust the height for mobile */
+        padding-bottom: 0;
     }
 
     section {
