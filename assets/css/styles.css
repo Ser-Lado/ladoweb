@@ -83,6 +83,11 @@ footer {
     .pdf-container {
         height: 500px; /* Adjust the height for mobile */
         padding-bottom: 0;
+        overflow-y: auto; /* Allow vertical scrolling */
+    }
+
+    .pdf-container iframe {
+        height: 100%; /* Ensure iframe takes full height */
     }
 
     section {
