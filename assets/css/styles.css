@@ -60,7 +60,8 @@ footer {
 .pdf-container {
     position: relative;
     width: 100%;
-    padding-top: 75%; /* 4:3 Aspect Ratio */
+    height: 0;
+    padding-bottom: 75%; /* 4:3 Aspect Ratio */
 }
 
 .pdf-container iframe {
@@ -70,4 +71,5 @@ footer {
     width: 100%;
     height: 100%;
     border: none;
+    overflow: scroll;
 }
