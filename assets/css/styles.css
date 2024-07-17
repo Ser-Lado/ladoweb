@@ -74,6 +74,10 @@ footer {
     border: none;
 }
 
+.mobile-pdf-fallback {
+    display: none;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -88,6 +92,16 @@ footer {
 
     .pdf-container iframe {
         height: 100%; /* Ensure iframe takes full height */
+    }
+
+    .pdf-container iframe {
+        display: none;
+    }
+
+    .mobile-pdf-fallback {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
     }
 
     section {
