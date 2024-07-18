@@ -10,6 +10,28 @@ header {
     color: #fff;
     padding: 1em 0;
     text-align: center;
+    position: relative;
+}
+
+nav {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
 }
 
 nav ul {
@@ -79,9 +101,18 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
     }
 
     .pdf-container {
