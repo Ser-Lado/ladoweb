@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Self-Paced Training</title>
+    
+    <!-- Bootstrap 5.0.2 CSS -->
+    <link href="C:/Users/LADO/Documents/My Files/5 PRIMETECH/website/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons (optional) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles for enhanced design */
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Poppins', sans-serif;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Header Section Styles */
+        .header-section {
+            background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('assets/img/header-bg.jpg');
+            background-size: cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .header-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #f0f0f0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-section p {
+            font-size: 1.3rem;
+            color: #e0e0e0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .card {
+            border: none;
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .card-title {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .card-body p {
+            color: #6c757d;
+        }
+
+        /* Button Hover Effect */
+        .btn {
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #f8f9fa;
+        }
+
+        .social-icons i {
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-icons i:hover {
+            color: #007bff;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .header-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <section class="header-section">
+        <h1>Online Self-Paced Training</h1>
+        <p>PrimeTech Skills Institute</p>
+        <p><b>Three Online Self-Paced Trainings</b><br><i>45 Hours | 3 to 5 Days Per Training</i></p>
+    </section>
+
+    <!-- Sticky Navbar (using Bootstrap 5) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">PrimeTech Skills</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduction">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#readings1">Readings 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#readings2">Readings 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#readings3">Readings 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Main Section -->
+        <section id="Main" class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Advanced Computer Proficiency</h2>
+                    <p><b>THREE ONLINE SELF-PACED TRAININGS</b></p>
+                    <p><i>45 hours / 3 TO 5 DAYS PER TRAINING</i></p>
+                    <p>&copy; 2024 Advanced Computer Proficiency Course. All rights reserved.</p>
+                    <p>All materials contained in this course, including but not limited to text, graphics, logos, icons, images, audio clips, video clips, and software, are the property of the author or its content suppliers and are protected by international copyright laws. Unauthorized reproduction, distribution, modification, or use of the materials is strictly prohibited without prior written permission from the author.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer Section -->
+        <section id="disclaimer" class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Disclaimer</h2>
+                    <p>The information provided in this Advanced Computer Proficiency Course is for educational and informational purposes only. While every effort has been made to ensure the accuracy and reliability of the content, the course administrators make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the course content or related graphics contained in the course for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+						<br>
+						<br>
+						In no event will the author, its administrators, instructors, or affiliates be liable for any loss or damage, including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of or in connection with the use of this course.
+						<br>
+						<br>
+						Participants are encouraged to verify any information obtained from this course before relying on it. The course administrators reserve the right to make changes and updates to the course content without notice.
+						<br>
+						<br>
+						External links provided within the course are for convenience and informational purposes only; they do not constitute an endorsement or approval by the author of any of the products, services, or opinions of the corporation or organization or individual. The author bears no responsibility for the accuracy, legality, or content of the external sites or for that of subsequent links.
+						<br>
+						<br>
+						By participating in this course, you agree to the terms of this disclaimer and acknowledge that you have read and understood its contents.</p>
+				</div>
+            </div>
+        </section>
+		
+		<!-- Introduction Section -->
+        <section id="introduction" class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Welcome to the Advanced Computer Proficiency Course!</h2>
+					<p>Dear Participants,</p>
+					<p>We are delighted to welcome you to our Advanced Computer Proficiency Course! This comprehensive training program is designed to equip you with the essential skills needed to navigate and excel in the digital age, particularly within educational environments. Over the course of our three self-paced trainings, you'll explore a variety of cutting-edge tools and practices that will enhance your efficiency, creativity, and cybersecurity awareness.</p>
+				<br>
+					<h2>Course Overview</h2>
+					<p>This advanced computer proficiency course is designed to equip participants with the skills needed to effectively utilize modern educational technology tools, create multimedia content, ensure cybersecurity, and utilize assessment tools. The course is divided into three self-paced online trainings, each spanning 3 to 5 days, with a total of 45 hours.</p>        
+				 <br>
+					<h2>What You Can Expect:</h2>
+					   <p>  <b>Learning Management Systems:</b> <br> Master the use of Google Classroom, Google Meet, and Google Drive to streamline your teaching and collaboration processes.<br> <br>
+							<b>Educational Technology Tools:</b> <br> Harness the power of Chat GPT, Quillbot, Microsoft Office, and Kahoot! to elevate your teaching strategies and student engagement.<br> <br>
+							<b>Multimedia and Content Creation:</b> <br> Dive into the world of Prezi, Canva, video editing, and podcasting to create compelling and dynamic educational content.<br> <br>
+							<b>Assessment and Evaluation Tools:</b> <br> Develop your skills in using Google Forms, Microsoft Forms, and rubric creation tools for effective assessment and evaluation.<br> <br>
+							<b>Cybersecurity and Online Safety:</b> <br> Learn the fundamental practices of cybersecurity to protect yourself and your students in the digital realm.</p>
+					<br>
+				</div>
+            </div>
+        </section>
+
+        <!-- Readings 1 Section -->
+        <section id="readings1" class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Readings 1</h2>
+                    <h3>Training 1.0 Learning Management System (LMS)</h3>
+                    <p>Mastering Google Classroom, Google Meet, and Google Drive</p>
+                    <h3>Training 1.1: Educational Technology Tools</h3>
+                    <p>Leveraging Educational Technology Tools</p>
+					<p><b><i>NOTE:</i></b><br>
+					Enrolled students can directly download the PDF. If you are not enrolled, you must enroll for the class to gain access:</p>
+                    <a href="https://drive.google.com/file/d/1a3QpisomXaFFXwRfS4GzjdVDRyern-ip/view?usp=drive_link" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="bi bi-download"></i> Download PDF for Training 1.0 and 1.1
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Readings 2 Section -->
+        <section id="readings2" class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Readings 2</h2>
+                    <h3>Training 2.0 Multimedia and Content Creation</h3>
+                    <p>Enhancing Multimedia and Content Creation Skills</p>
+					<h3>Training 2.1 Assessment and Evaluation Tools</h3>
+                    <p>Optimizing Assessment and Evaluation with Digital Tools</p>
+					<p><b><i>NOTE:</i></b><br>
+					Enrolled students can directly download the PDF. If you are not enrolled, you must enroll for the class to gain access:</p>
+                    <a href="https://drive.google.com/file/d/1s69p57peU_y6fIz8G46r850DpK2qmHrI/view?usp=drive_link" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="bi bi-download"></i> Download PDF for Training 2.0 and 2.1
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Readings 3 Section -->
+        <section id="readings3" class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Readings 3</h2>
+                    <h3>Training 3.0 Cybersecurity and Online Safety</h3>
+                    <p>Learn essential cybersecurity practices.</p>
+					<p><b><i>NOTE:</i></b><br>
+					Enrolled students can directly download the PDF. If you are not enrolled, you must enroll for the class to gain access:</p>
+                    <a href="https://drive.google.com/file/d/1o_oWRQEE4jVVmVNpP-V_lNT7MS-r9Ejn/view?usp=drive_link" class="btn btn-primary btn-sm" target="_blank">
+                        <i class="bi bi-download"></i> Download PDF for Training 3.0
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activity Submission Section -->
+        <section id="activities" class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Activity Submission</h2>
+                    <h3>Submit Your Activity</h3>
+                    <p>Please submit your activity using the link below:</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfb7zIFpPYfxEjLF0DKxWdQuHQH5_XWV3EGHrqyyLKvTyDXNg/viewform?usp=sf_link" class="btn btn-success btn-sm" target="_blank">
+                        <i class="bi bi-file-earmark-plus"></i> Submit Activity
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Congratulatory Message Section -->
+        <section id="congratulations" class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Congratulations on Completing the Course!</h2>
+                <h3>Dear Participants,</h3>
+                <h4>Congratulations on successfully completing the Advanced Computer Proficiency Course!</h4>
+                
+                <p>We are immensely proud of your dedication and hard work throughout the three self-paced online trainings. Your commitment to mastering advanced digital skills is commendable, and we hope you feel a great sense of accomplishment.</p>
+                <br>
+               <h2>What You’ve Achieved:</h2>
+                
+                 <p>    1.	<b>Learning Management Systems:</b> You’ve gained expertise in Google Classroom, Google Meet, and Google Drive, enabling you to streamline your teaching and collaboration processes.<br>
+                        2.	<b>Educational Technology Tools:</b> You’ve harnessed the power of Chat GPT, Quillbot, Microsoft Office, and Kahoot! to enhance your teaching strategies and student engagement.<br>
+                        3.	<b>Multimedia and Content Creation:</b> You’ve learned to create compelling and dynamic educational content using Prezi, Canva, video editing software, and podcasting tools.<br>
+                        4.	<b>Assessment and Evaluation Tools:</b> You’ve developed skills in using Google Forms, Microsoft Forms, and rubric creation tools for effective assessment and evaluation.<br>
+                        5.	<b>Cybersecurity and Online Safety:</b> You’ve mastered fundamental cybersecurity practices to protect yourself and your students in the digital realm.<br>
+                 </p>
+                <br>
+                <p>Your journey didn’t just end with acquiring new skills; it marked the beginning of your enhanced capability to thrive in today’s digital landscape. By integrating these advanced tools and practices into your educational or professional environment, you’re not only improving your own efficiency but also empowering those around you to excel.</p>
+                
+                <br>
+                <h2>What’s Next?</h2>
+                <p>   •	<b>Apply Your Knowledge:</b> Implement the skills and techniques you’ve learned to improve your daily workflows and teaching methods.<br>
+                      •	<b>Share and Collaborate:</b> Use the discussion forums and networks you’ve built during this course to continue sharing insights and collaborating with your peers.<br>
+                      •	<b>Stay Updated:</b> Technology is always evolving. Stay curious and keep learning to stay ahead in the ever-changing digital world.</p>
+                
+                <br>
+                <h2>Support and Resources:</h2>
+                <p>Remember, our team is always here to support you. If you have any questions or need further assistance, please don’t hesitate to reach out. We hope this course has been a valuable and enriching experience for you. We look forward to hearing about your future successes and the positive impact you’ll make with your newfound skills.</p>
+              
+                <p>Once again, congratulations on completing the Advanced Computer Proficiency Course. Here’s to your continued growth and success!</p>
+                
+                <br>
+                <p>Best regards,</p>          
+               
+                <p>
+                 <b>MARK JOHN P. LADO, MIT</b><br>
+                <i>Master in Information Technology</i>
+                </p> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificate Ordering Section -->
+        <section id="order-certificate" class="mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Order Your Certificate</h2>
+                    <p>Please submit your details to receive your certificate:</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScpRdZ49FghQkNKSE-NprMipvM91_1AHUV7_o4OgY4aLvOcTg/viewform?usp=sf_link" class="btn btn-warning btn-sm" target="_blank">
+                        <i class="bi bi-award"></i> Submit Details for Certificate
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2024 Online Self-Paced Training | Powered by Lado Softwares</p>
+            <p><strong>PrimeTech Skills Institute</strong><br> Guinacot, Danao City, Cebu, Philippines</p>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.0.2 JS -->
+    <script src="C:/Users/LADO/Documents/My Files/5 PRIMETECH/website/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
