@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoTech Books Updates | Mark John Lado</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/johndoe.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .books-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            grid-auto-rows: 180px;
+            gap: 8px;
+            width: 100vw;
+            height: 100vh;
+        }
+        .books-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(1px) brightness(0.5);
+            transition: filter 0.3s;
+            pointer-events: none;
+            user-select: none;
+        }
+        .bg-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(84, 84, 84, 0.65);
+            z-index: 1;
+        }
+        .subscribe-card {
+            position: relative;
+            z-index: 2;
+            max-width: 740px;
+            margin: 2rem auto;
+            border-radius: 1rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+            background: #ffffff;
+        }
+        .author-bio {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        .privacy-note {
+            font-size: 0.85rem;
+            color: #888;
+        }
+        @media (max-width: 600px) {
+            .subscribe-card { max-width: 100%; }
+            iframe { width: 100% !important; }
+            .books-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); grid-auto-rows: 100px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Book covers background -->
+    <div class="books-bg">
+        <div class="books-grid">
+            <!-- Repeat the 12 book covers several times to fill the grid -->
+            <!-- Loop 1 -->
+            <img src="assets/imgs/book1.jpeg" alt="Book 1">
+            <img src="assets/imgs/book2.jpg" alt="Book 2">
+            <img src="assets/imgs/book3.jpeg" alt="Book 3">
+            <img src="assets/imgs/book4.jpeg" alt="Book 4">
+            <img src="assets/imgs/book5.jpg" alt="Book 5">
+            <img src="assets/imgs/Book6.jpg" alt="Book 6">
+            <img src="assets/imgs/Book7.jpg" alt="Book 7">
+            <img src="assets/imgs/Book8.jpg" alt="Book 8">
+            <img src="assets/imgs/Book9.jpg" alt="Book 9">
+            <img src="assets/imgs/Book10.jpg" alt="Book 10">
+            <img src="assets/imgs/Book11.jpg" alt="Book 11">
+            <img src="assets/imgs/Book12.png" alt="Book 12">
+            <!-- Loop 2 -->
+            <img src="assets/imgs/book1.jpeg" alt="Book 1">
+            <img src="assets/imgs/book2.jpg" alt="Book 2">
+            <img src="assets/imgs/book3.jpeg" alt="Book 3">
+            <img src="assets/imgs/book4.jpeg" alt="Book 4">
+            <img src="assets/imgs/book5.jpg" alt="Book 5">
+            <img src="assets/imgs/Book6.jpg" alt="Book 6">
+            <img src="assets/imgs/Book7.jpg" alt="Book 7">
+            <img src="assets/imgs/Book8.jpg" alt="Book 8">
+            <img src="assets/imgs/Book9.jpg" alt="Book 9">
+            <img src="assets/imgs/Book10.jpg" alt="Book 10">
+            <img src="assets/imgs/Book11.jpg" alt="Book 11">
+            <img src="assets/imgs/Book12.png" alt="Book 12">
+            <!-- Loop 3 -->
+            <img src="assets/imgs/book1.jpeg" alt="Book 1">
+            <img src="assets/imgs/book2.jpg" alt="Book 2">
+            <img src="assets/imgs/book3.jpeg" alt="Book 3">
+            <img src="assets/imgs/book4.jpeg" alt="Book 4">
+            <img src="assets/imgs/book5.jpg" alt="Book 5">
+            <img src="assets/imgs/Book6.jpg" alt="Book 6">
+            <img src="assets/imgs/Book7.jpg" alt="Book 7">
+            <img src="assets/imgs/Book8.jpg" alt="Book 8">
+            <img src="assets/imgs/Book9.jpg" alt="Book 9">
+            <img src="assets/imgs/Book10.jpg" alt="Book 10">
+            <img src="assets/imgs/Book11.jpg" alt="Book 11">
+            <img src="assets/imgs/Book12.png" alt="Book 12">
+            <!-- Loop 4 -->
+            <img src="assets/imgs/book1.jpeg" alt="Book 1">
+            <img src="assets/imgs/book2.jpg" alt="Book 2">
+            <img src="assets/imgs/book3.jpeg" alt="Book 3">
+            <img src="assets/imgs/book4.jpeg" alt="Book 4">
+            <img src="assets/imgs/book5.jpg" alt="Book 5">
+            <img src="assets/imgs/Book6.jpg" alt="Book 6">
+            <img src="assets/imgs/Book7.jpg" alt="Book 7">
+            <img src="assets/imgs/Book8.jpg" alt="Book 8">
+            <img src="assets/imgs/Book9.jpg" alt="Book 9">
+            <img src="assets/imgs/Book10.jpg" alt="Book 10">
+            <img src="assets/imgs/Book11.jpg" alt="Book 11">
+            <img src="assets/imgs/Book12.png" alt="Book 12">
+            <!-- Loop 5 -->
+            <img src="assets/imgs/book1.jpeg" alt="Book 1">
+            <img src="assets/imgs/book2.jpg" alt="Book 2">
+            <img src="assets/imgs/book3.jpeg" alt="Book 3">
+            <img src="assets/imgs/book4.jpeg" alt="Book 4">
+            <img src="assets/imgs/book5.jpg" alt="Book 5">
+            <img src="assets/imgs/Book6.jpg" alt="Book 6">
+            <img src="assets/imgs/Book7.jpg" alt="Book 7">
+            <img src="assets/imgs/Book8.jpg" alt="Book 8">
+            <img src="assets/imgs/Book9.jpg" alt="Book 9">
+            <img src="assets/imgs/Book10.jpg" alt="Book 10">
+            <img src="assets/imgs/Book11.jpg" alt="Book 11">
+            <img src="assets/imgs/Book12.png" alt="Book 12">
+            <!-- Loop 6 -->
+            <img src="assets/imgs/book1.jpeg" alt="Book 1">
+            <img src="assets/imgs/book2.jpg" alt="Book 2">
+            <img src="assets/imgs/book3.jpeg" alt="Book 3">
+            <img src="assets/imgs/book4.jpeg" alt="Book 4">
+            <img src="assets/imgs/book5.jpg" alt="Book 5">
+            <img src="assets/imgs/Book6.jpg" alt="Book 6">
+            <img src="assets/imgs/Book7.jpg" alt="Book 7">
+            <img src="assets/imgs/Book8.jpg" alt="Book 8">
+            <img src="assets/imgs/Book9.jpg" alt="Book 9">
+            <img src="assets/imgs/Book10.jpg" alt="Book 10">
+            <img src="assets/imgs/Book11.jpg" alt="Book 11">
+            <img src="assets/imgs/Book12.png" alt="Book 12">
+            <!-- Loop 7 -->
+            <img src="assets/imgs/book1.jpeg" alt="Book 1">
+            <img src="assets/imgs/book2.jpg" alt="Book 2">
+            <img src="assets/imgs/book3.jpeg" alt="Book 3">
+            <img src="assets/imgs/book4.jpeg" alt="Book 4">
+            <img src="assets/imgs/book5.jpg" alt="Book 5">
+            <img src="assets/imgs/Book6.jpg" alt="Book 6">
+            <img src="assets/imgs/Book7.jpg" alt="Book 7">
+            <img src="assets/imgs/Book8.jpg" alt="Book 8">
+            <img src="assets/imgs/Book9.jpg" alt="Book 9">
+            <img src="assets/imgs/Book10.jpg" alt="Book 10">
+            <img src="assets/imgs/Book11.jpg" alt="Book 11">
+            <img src="assets/imgs/Book12.png" alt="Book 12">
+            <!-- Add more loops if needed for larger screens -->
+        </div>
+        <div class="bg-overlay"></div>
+    </div>
+    <!-- Subscription card -->
+    <div class="container position-relative" style="z-index:2;">
+        <div class="subscribe-card p-4 mt-5">
+            <div class="text-center mb-3">
+                <h1 class="mb-2 fw-bold text-dark">Join My InfoTech Books Mailing List</h1>
+                <h5 class="text-danger mb-3">Be the first to know about new releases, exclusive content, and special offers!</h5>
+                <p class="mb-4 text-dark">Subscribe with your active email address to receive updates about my upcoming book publications and technology resources.</p>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfzi8_Php_jMcA_aLI_waxHW-vruoy5abY8LzshWoc2iyd7fg/viewform?embedded=true" width="400" height="500" frameborder="0" marginheight="0" marginwidth="0" style="background: #fff; border-radius: 8px;">Loading…</iframe>
+            </div>
+            <div class="author-bio text-center mb-2">
+                <strong><h3>Mark John Lado</h3><strong>
+                Filipino technology and education enthusiast.<br>
+                Master's in Information Technology.<br>
+                Author, educator, and lifelong learner.<br>
+                Official Website | <a href="https://www.markjohnlado.com">www.markjohnlado.com</a>
+            </div>
+            <div class="privacy-note text-center">
+                <i class="ti-lock"></i> Your email will only be used for book updates. No spam, ever.
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/johndoe.js"></script>
+</body>
+</html>
