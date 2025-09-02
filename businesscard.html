@@ -35,23 +35,37 @@
       margin-bottom: 10px;
       color: #555;
     }
+
+    /* Social Grid */
     .social-icons {
       margin: 20px 0;
-      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      justify-items: center;
     }
     .social-icons a {
-      font-size: 22px;
-      margin: 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
       color: #dc3545;
+      font-size: 26px;
       transition: 0.3s;
     }
     .social-icons a:hover {
       color: #000;
     }
+    .social-icons span {
+      font-size: 14px;
+      margin-top: 6px;
+      color: #555;
+    }
+
     .btn-website {
       display: inline-block;
       margin-top: 20px;
-      padding: 10px 20px;
+      padding: 12px 24px;
       font-size: 1rem;
       border-radius: 25px;
       background: #dc3545;
@@ -73,19 +87,33 @@
     <h2>Mark John Lado</h2>
     <p>Master in Information Technology</p>
     <p>Instructor @ Cebu Technological University</p>
-    <p><i class="ti-email"></i> markjohnlado@example.com</p>
-    <p><i class="ti-mobile"></i> +63 912 345 6789</p>
+    <p><i class="ti-email"></i> contact@markjohnlado.com</p>
+    <p><i class="ti-mobile"></i> +63 962 126 8435</p>
     <hr>
 
-    <!-- Social Icons -->
+    <!-- Social Icons in Grid -->
     <div class="social-icons">
-      <a href="https://www.amazon.com/author/markjohnlado" target="_blank" title="Amazon Author"><i class="ti-book"></i></a>
-      <a href="https://github.com/Ser-Lado" target="_blank" title="GitHub"><i class="ti-github"></i></a>
-      <a href="https://www.linkedin.com/in/markjohnlado" target="_blank" title="LinkedIn"><i class="ti-linkedin"></i></a>
-      <a href="https://orcid.org/0000-0002-9634-7513" target="_blank" title="ORCID"><i class="ti-id-badge"></i></a>
-      <a href="https://scholar.google.com/citations?user=2F7qGj4AAAAJ&hl=en&oi=ao" target="_blank" title="Google Scholar"><i class="ti-google"></i></a>
-      <a href="https://www.researchgate.net/profile/Mark-John-Lado" target="_blank" title="ResearchGate"><i class="ti-rss-alt"></i></a>
-      <a href="https://m.me/markjohn03102005" target="_blank" title="Messenger"><i class="ti-comment-alt"></i></a>
+      <a href="https://www.amazon.com/author/markjohnlado" target="_blank">
+        <i class="ti-book"></i><span>Amazon</span>
+      </a>
+      <a href="https://github.com/Ser-Lado" target="_blank">
+        <i class="ti-github"></i><span>GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/markjohnlado" target="_blank">
+        <i class="ti-linkedin"></i><span>LinkedIn</span>
+      </a>
+      <a href="https://orcid.org/0000-0002-9634-7513" target="_blank">
+        <i class="ti-id-badge"></i><span>ORCID</span>
+      </a>
+      <a href="https://scholar.google.com/citations?user=2F7qGj4AAAAJ&hl=en&oi=ao" target="_blank">
+        <i class="ti-google"></i><span>Scholar</span>
+      </a>
+      <a href="https://www.researchgate.net/profile/Mark-John-Lado" target="_blank">
+        <i class="ti-rss-alt"></i><span>ResearchGate</span>
+      </a>
+      <a href="https://m.me/markjohn03102005" target="_blank">
+        <i class="ti-comment-alt"></i><span>Messenger</span>
+      </a>
     </div>
 
     <!-- Website Button -->
