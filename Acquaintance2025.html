@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes" />
+  <title>Acquaintance Party 2025 — Download Program</title>
+  <meta name="description" content="Download the official Program Flow of Activities for Acquaintance Party 2025." />
+  <meta name="theme-color" content="#dc3545" />
+  <style>
+    /* --- Mobile-first variables --- */
+    :root{
+      --bg: #fff8f9;
+      --accent: #dc3545;
+      --accent-2: #b21f2f;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --radius: 16px;
+      --shadow: 0 8px 24px rgba(12,18,25,0.06);
+      --max-width: 520px;
+      --tap: 56px; /* recommended minimum tap target */
+    }
+    /* --- Base --- */
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #fff 0%, var(--bg) 100%);
+      color:#0b1220;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* --- Page layout --- */
+    .page {
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+      padding:20px;
+      gap:16px;
+    }
+
+    .card {
+      width:100%;
+      max-width:var(--max-width);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      align-items:center;
+    }
+
+    /* --- Header / Logo --- */
+    .logo {
+      width:84px;
+      height:84px;
+      border-radius:14px;
+      display:grid;
+      place-items:center;
+      background: linear-gradient(180deg, rgba(220,53,69,0.06), rgba(220,53,69,0.01));
+      box-shadow: 0 6px 18px rgba(220,53,69,0.06);
+    }
+    .logo svg { width:56px; height:56px; }
+
+    h1 {
+      margin:0;
+      font-size:1.1rem;
+      color:var(--accent);
+      text-align:center;
+    }
+    p.lead {
+      margin:0;
+      text-align:center;
+      color:var(--muted);
+      font-size:0.96rem;
+      line-height:1.35;
+    }
+
+    /* --- Big CTA --- */
+    .actions {
+      width:100%;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      align-items:center;
+    }
+
+    .btn-download {
+      width:100%;
+      height:var(--tap);
+      min-height:var(--tap);
+      border-radius:999px;
+      background: linear-gradient(90deg,var(--accent), var(--accent-2));
+      color:#fff;
+      border:0;
+      font-weight:700;
+      font-size:1.02rem;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      text-decoration:none;
+      box-shadow: 0 10px 30px rgba(220,53,69,0.14);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn-download:active { transform: translateY(1px); }
+
+    .secondary-row {
+      width:100%;
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .btn-ghost {
+      flex:1;
+      height:48px;
+      border-radius:12px;
+      border:1px solid rgba(12,18,25,0.06);
+      background:transparent;
+      color:var(--muted);
+      font-weight:600;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      text-decoration:none;
+    }
+
+    /* --- QR box --- */
+    .qr-box {
+      width:100%;
+      display:flex;
+      gap:12px;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+    }
+    .qr {
+      width:220px;
+      height:220px;
+      max-width:85%;
+      background:#fff;
+      border-radius:12px;
+      padding:8px;
+      box-shadow: 0 8px 20px rgba(2,6,23,0.06);
+      display:grid;
+      place-items:center;
+    }
+    .qr img { width:100%; height:100%; object-fit:contain; border-radius:6px; }
+
+    .hint {
+      font-size:0.9rem;
+      color:var(--muted);
+      text-align:center;
+    }
+
+    /* --- Small preview (collapsible) --- */
+    .preview {
+      width:100%;
+      border-radius:12px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.04);
+    }
+    .preview iframe {
+      width:100%;
+      height:340px;
+      border:0;
+      display:block;
+    }
+
+    /* --- Footer --- */
+    .foot {
+      width:100%;
+      max-width:var(--max-width);
+      text-align:center;
+      color:var(--muted);
+      font-size:0.88rem;
+      padding:6px 10px;
+    }
+
+    /* --- Responsive tweaks --- */
+    @media (min-width:560px){
+      .card { padding:22px; }
+      .btn-download { font-size:1.1rem; height:64px; }
+    }
+
+    @media (max-width:360px){
+      .qr { width:180px; height:180px; }
+      .preview iframe { height:260px; }
+    }
+
+    /* --- Accessibility focus --- */
+    .btn-download:focus, .btn-ghost:focus { outline:3px solid rgba(220,53,69,0.12); outline-offset:2px; }
+
+    /* --- Print: show only link --- */
+    @media print {
+      body { background:#fff; }
+      .card, .qr { box-shadow:none; border-radius:0; }
+      .preview, .qr { display:none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" role="main">
+    <section class="card" aria-labelledby="title">
+      <div class="logo" aria-hidden="true">
+        <!-- Simple party icon -->
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ff8a8a"/><stop offset="1" stop-color="#dc3545"/></linearGradient></defs>
+          <rect x="6" y="8" width="52" height="48" rx="10" fill="url(#g)" opacity="0.12"/>
+          <g transform="translate(10,10)"><path d="M18 2c8 0 9 7 6 14s-12 9-15 5 1-19 9-19z" fill="#dc3545"/></g>
+        </svg>
+      </div>
+
+      <h1 id="title">Acquaintance Party 2025</h1>
+      <p class="lead">Thanks for scanning! Tap the big button below to open or download the official Program Flow (PDF). Save it to your device for offline use.</p>
+
+      <div class="actions" role="group" aria-label="Download actions">
+        <!-- Primary download button (opens Drive link in new tab) -->
+        <a id="downloadBtn" class="btn-download" href="#" target="_blank" rel="noopener noreferrer" aria-label="Open and download program flow PDF">
+          <!-- inline download icon -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12" stroke="white" stroke-width="1.6" stroke-linecap="round"/><path d="M8 11l4 4 4-4" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg>
+          Open / Download Program Flow
+        </a>
+
+        <div class="secondary-row" aria-hidden="false">
+          <button id="shareBtn" class="btn-ghost" type="button" aria-label="Share program link">Share</button>
+          <button id="copyBtn" class="btn-ghost" type="button" aria-label="Copy program link to clipboard">Copy Link</button>
+        </div>
+
+        <div class="qr-box" aria-label="QR code and instructions">
+          <div class="qr" role="img" aria-label="QR code to open program flow">
+            <img id="qrImg" src="" alt="QR code linking to the program flow">
+          </div>
+          <div class="hint">Scan this QR from another device or share it with friends.</div>
+        </div>
+
+        <!-- Collapsible small preview for mobile (optional) -->
+        <details style="width:100%; margin-top:8px; border-radius:12px; overflow:hidden;">
+          <summary style="cursor:pointer; padding:10px 12px; background:linear-gradient(90deg,#fff,#fff); border-radius:12px; font-weight:700;">Preview PDF (tap to open)</summary>
+          <div class="preview" aria-hidden="false">
+            <!-- Drive preview embed; browsers on mobile will open Google Drive app or allow viewing -->
+            <iframe id="pdfFrame" src="" title="Program Flow preview (Google Drive)"></iframe>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <div class="foot">If the PDF doesn't open, use the Copy Link or Share options. Contact the Acquaintance Party Committee for corrections.</div>
+  </main>
+
+  <script>
+    // ===== CONFIGURE this link =====
+    const driveLink = "https://drive.google.com/file/d/1PF_8wtcpsAmA2_WvK4v6LVzvadecr-Yw/view?usp=sharing";
+    const drivePreview = "https://drive.google.com/file/d/1PF_8wtcpsAmA2_WvK4v6LVzvadecr-Yw/preview";
+
+    // ===== ELEMENTS =====
+    const qrImg = document.getElementById('qrImg');
+    const downloadBtn = document.getElementById('downloadBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    const shareBtn = document.getElementById('shareBtn');
+    const pdfFrame = document.getElementById('pdfFrame');
+
+    // 1) set big CTA and preview link
+    downloadBtn.href = driveLink;
+    pdfFrame.src = drivePreview;
+
+    // 2) set QR via Google Chart API (encoded)
+    const qrSize = 512; // large size encoded for clearer scanning when displayed on screens
+    const qrSrc = `https://chart.googleapis.com/chart?cht=qr&chs=${qrSize}x${qrSize}&chl=${encodeURIComponent(driveLink)}&chld=L|1`;
+    qrImg.src = qrSrc;
+
+    // 3) copy link to clipboard
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(driveLink);
+        copyBtn.textContent = "✓ Copied";
+        setTimeout(() => { copyBtn.textContent = "Copy Link"; }, 2200);
+      } catch (err) {
+        // fallback: select URL (for browsers that block clipboard)
+        prompt("Copy this link:", driveLink);
+      }
+    });
+
+    // 4) share: use Web Share API if available (mobile-friendly)
+    shareBtn.addEventListener('click', async () => {
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: 'Acquaintance Party 2025 — Program Flow',
+            text: 'Get the official Program Flow (PDF) for Acquaintance Party 2025',
+            url: driveLink
+          });
+        } catch (err) {
+          // user cancelled or failed
+          console.warn('Share failed:', err);
+        }
+      } else {
+        // fallback: copy to clipboard + instruct user
+        try {
+          await navigator.clipboard.writeText(driveLink);
+          alert('Link copied to clipboard. Share it with your friends.');
+        } catch (e) {
+          prompt('Copy this link and share it:', driveLink);
+        }
+      }
+    });
+
+    // 5) small UX: focus primary CTA on load (accessibility)
+    window.addEventListener('load', () => {
+      downloadBtn.focus({preventScroll:true});
+    });
+
+    // 6) helpful handling if Google QR blocked: show text link alt on error
+    qrImg.addEventListener('error', () => {
+      qrImg.alt = 'QR not available. Use Copy Link or Share to open the program.';
+      qrImg.style.display = 'none';
+      const hint = document.createElement('div');
+      hint.style.color = '#6b7280';
+      hint.style.fontSize = '0.95rem';
+      hint.style.textAlign = 'center';
+      hint.textContent = 'QR not available — use Copy Link or Share.';
+      document.querySelector('.qr-box').appendChild(hint);
+    });
+
+    // 7) optional: detect if user is on very small screen and auto-expand preview
+    if (window.innerWidth <= 420) {
+      // don't auto-open to avoid heavy data usage, but set a small hint
+      // (left intentionally light)
+    }
+  </script>
+</body>
+</html>
