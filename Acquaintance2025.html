@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -54,7 +55,6 @@
       align-items:center;
     }
 
-    /* --- Header / Logo --- */
     .logo {
       width:84px;
       height:84px;
@@ -236,8 +236,9 @@
 
         <div class="qr-box" aria-label="QR code and instructions">
           <div class="qr" role="img" aria-label="QR code to open program flow">
-            <!-- Image source will be set by JS: uses embedded PNG first, fallback to Google Chart -->
-            <img id="qrImg" src="" alt="QR code linking to the program flow">
+            <!-- We'll first try to display the local file in assets/imgs/QR2025Web.png.
+                 If it fails (file missing or path wrong), JS will replace src with a Google Chart QR fallback. -->
+            <img id="qrImg" src="assets/imgs/QR2025Web.png" alt="QR code linking to the program flow">
           </div>
           <div class="hint" id="qrHint">Scan this QR from another device or share it with friends.</div>
         </div>
@@ -261,9 +262,6 @@
     const driveLink = "https://drive.google.com/file/d/1PF_8wtcpsAmA2_WvK4v6LVzvadecr-Yw/view?usp=sharing";
     const drivePreview = "https://drive.google.com/file/d/1PF_8wtcpsAmA2_WvK4v6LVzvadecr-Yw/preview";
 
-    // ===== EMBEDDED QR IMAGE DATA URI (from uploaded QR2025Web PNG) =====
-    const embeddedQRDataURI = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABugAAAOlCAYAAACPMmEUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABYQSURBVHhe7d15nBzVef7r+wd2b7uXUyq2hKkJRAQkRZX4kC7BBxgQkW2pQp6S+6gMLVjVqWGOaYgVhQp4Gm7pAohpqlpU1tQq1Q7nZtq1tq1u2+7u9nZ3Z2f2X3nntmZ3Z3f+7/7v3nHPvOec73vO/7P3f5++53z/n+eL4+f7/3vvOe6sGgCAwYAYGABgYAaGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAYGABgYAWGABgYAYGABgYAYGABgYAYGABgYAXGq0uFfDq7r4zBv3r9b8v9X9w4Wm2bW3X0+vdabp9t2q7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7a7b7b7"; 
-
     // ===== ELEMENTS =====
     const qrImg = document.getElementById('qrImg');
     const downloadBtn = document.getElementById('downloadBtn');
@@ -273,32 +271,53 @@
     const qrHint = document.getElementById('qrHint');
 
     // 1) set big CTA and preview link
-    downloadBtn.href = driveLink = "https://drive.google.com/file/d/1PF_8wtcpsAmA2_WvK4v6LVzvadecr-Yw/view?usp=sharing";
-    pdfFrame.src = "https://drive.google.com/file/d/1PF_8wtcpsAmA2_WvK4v6LVzvadecr-Yw/preview";
+    downloadBtn.href = driveLink;
+    pdfFrame.src = drivePreview;
 
-    // 2) Attempt to show embedded image (fast, local). If it fails, use Google Chart API as fallback.
-    (function setQR() {
-      try {
-        qrImg.src = embeddedQRDataURI;
-      } catch (err) {
-        const qrSize = 512;
-        qrImg.src = `https://chart.googleapis.com/chart?cht=qr&chs=${qrSize}x${qrSize}&chl=${encodeURIComponent(downloadBtn.href)}&chld=L|1`;
-      }
-    })();
+    // 2) Make sure local QR displays reliably:
+    //    - the HTML <img> already uses the exact path "assets/imgs/QR2025Web.png"
+    //    - if browser can't load it, swap to Google Charts QR as a fallback
+    qrImg.addEventListener('error', function () {
+      // hide attempted broken image quickly (avoids ugly broken-icon)
+      qrImg.style.display = 'none';
 
-    // 3) copy link to clipboard
+      // fallback QR (Google Chart API)
+      const qrSize = 512;
+      const fallback = document.createElement('img');
+      fallback.alt = 'QR code for program link';
+      fallback.width = fallback.height = 220;
+      fallback.style.width = '100%';
+      fallback.style.height = '100%';
+      fallback.style.objectFit = 'contain';
+      fallback.style.borderRadius = '6px';
+      fallback.src = `https://chart.googleapis.com/chart?cht=qr&chs=${qrSize}x${qrSize}&chl=${encodeURIComponent(driveLink)}&chld=L|1`;
+
+      // replace inside .qr container
+      const container = qrImg.parentElement;
+      container.appendChild(fallback);
+
+      // update hint
+      qrHint.textContent = 'QR not available locally — using online fallback. Use Copy Link or Share if needed.';
+    }, { once: true });
+
+    // 3) If local image loaded successfully, ensure it's visible (some servers may delay)
+    qrImg.addEventListener('load', function () {
+      qrImg.style.display = 'block';
+      qrHint.textContent = 'Scan this QR from another device or share it with friends.';
+    });
+
+    // 4) copy link to clipboard
     copyBtn.addEventListener('click', async () => {
       try {
         await navigator.clipboard.writeText(downloadBtn.href);
         copyBtn.textContent = "✓ Copied";
         setTimeout(() => { copyBtn.textContent = "Copy Link"; }, 2200);
       } catch (err) {
-        // fallback: select URL (for browsers that block clipboard)
         prompt("Copy this link:", downloadBtn.href);
       }
     });
 
-    // 4) share: use Web Share API if available (mobile-friendly)
+    // 5) Web Share API (mobile friendly) with fallback to copy
     shareBtn.addEventListener('click', async () => {
       if (navigator.share) {
         try {
@@ -320,16 +339,11 @@
       }
     });
 
-    // 5) small UX: focus primary CTA on load (accessibility)
+    // 6) focus primary CTA on load for accessibility
     window.addEventListener('load', () => {
       downloadBtn.focus({preventScroll:true});
-    });
-
-    // 6) helpful handling if QR fails to load: hide image and show text hint
-    qrImg.addEventListener('error', () => {
-      qrImg.style.display = 'none';
-      qrHint.textContent = 'QR not available — use Copy Link or Share.';
     });
   </script>
 </body>
 </html>
+```
